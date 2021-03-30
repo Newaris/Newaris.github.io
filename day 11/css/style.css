@@ -1,0 +1,342 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0; }
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+:focus, :active {
+  outline: none; }
+
+a:focus, a:active {
+  outline: none; }
+
+nav, footer, header, aside {
+  display: block; }
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; }
+
+input, button, textarea {
+  font-family: inherit; }
+
+input::-ms-clear {
+  display: none; }
+
+button {
+  cursor: pointer; }
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0; }
+
+a, a:visited {
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: none; }
+
+ul li {
+  list-style: none; }
+
+img {
+  vertical-align: top; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit; }
+
+body {
+  height: 100%; }
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-height: 100vh; }
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-height: 100vh;
+  background: url(../image/hello/Header-bg.jpg) 0 -35px no-repeat; }
+
+.header__top {
+  padding: 16px 23px;
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.menu {
+  font-family: Raleway;
+  font-size: 12px;
+  font-weight: bold; }
+
+.menu__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.menu__list-item {
+  margin: 0 0 0 20px; }
+
+.menu__link {
+  position: relative;
+  color: #000; }
+
+.menu__link--active:hover:after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 50%;
+  background: #FCBB08;
+  width: 40px;
+  height: 2px;
+  margin: 0 0 0 -20px; }
+
+.header__content {
+  font-family: Montserrat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.header__content-title {
+  color: #fff;
+  font-size: 100px;
+  font-weight: bold;
+  margin: 0 0 20px 0; }
+
+.header__content-subtitle {
+  color: #FCBB08;
+  font-size: 16px;
+  font-weight: 100;
+  letter-spacing: 3.7px; }
+
+.header__footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0 0 32px 0; }
+
+.about {
+  padding: 100px 0;
+  background: #F6F8FA; }
+
+.container {
+  max-width: 1175px;
+  margin: 0 auto; }
+
+.about__inner {
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  position: relative;
+  font-weight: bold;
+  font-size: 48px;
+  font-family: Montserrat; }
+
+.title:after {
+  content: '';
+  position: absolute;
+  height: 4px;
+  width: 60px;
+  left: 0;
+  bottom: -20px;
+  background: #FCBB08; }
+
+.about__text {
+  line-height: 23px;
+  font-size: 14px;
+  font-family: "Open Sans";
+  width: 772px; }
+
+.about__text p {
+  margin: 0 0 10px 0; }
+
+.about__text p:last-child {
+  margin: 0; }
+
+.features__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.features__body {
+  padding: 120px 0 0 0;
+  max-width: 470px;
+  margin: 0 auto; }
+
+.features__title {
+  width: 330px; }
+
+.features__text {
+  line-height: 23px;
+  font-family: "Open Sans";
+  font-weight: 100;
+  font-size: 14px;
+  margin: 130px 0 0 0; }
+
+.features__text p {
+  margin: 0 0 10px 0; }
+
+.feature__text p:last-child {
+  margin: 0; }
+
+.team {
+  padding: 80px 0 100px 0;
+  background: #F6F8FA; }
+
+.team__items {
+  margin: 100px 0 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.team__item {
+  text-align: center; }
+
+.team__img {
+  margin: 0 0 20px 0; }
+
+.team__name {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: bold;
+  margin: 0 0 10px 0; }
+
+.team__position {
+  font-family: "Open Sans";
+  font-weight: 100;
+  font-size: 11px;
+  color: #C2C2C2; }
+
+.price {
+  padding: 90px 0;
+  background: #BEC9D2; }
+
+.price__items {
+  margin: 80px 0 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 0 -15px; }
+
+.price__item {
+  font-family: "Open Sans";
+  padding: 60px 10px;
+  margin: 0 10px;
+  text-align: center;
+  position: relative;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 1 33.333%;
+  flex: 0 1 33.333%;
+  background: #fff; }
+
+.price__name {
+  top: 15px;
+  left: 15px;
+  position: absolute;
+  font-size: 18px;
+  font-weight: bold; }
+
+.price__cost {
+  padding: 0 0 0 30px;
+  display: inline-block;
+  position: relative;
+  font-size: 80px;
+  margin: 0 0 45px 0; }
+
+.price__cost span {
+  font-size: 20px; }
+
+.price__cost:before {
+  content: "$";
+  position: absolute;
+  font-size: 40px;
+  top: 0;
+  left: 0; }
+
+.price__list {
+  margin: 0 0 50px 0; }
+
+.price__list-item {
+  font-size: 16px;
+  font-weight: 100; }
+
+.price__list li {
+  margin: 0 0 30px 0; }
+
+.price__list li:last-child {
+  margin: 0; }
+
+.price__btn {
+  font-family: Montserrat;
+  background: #fff; }
